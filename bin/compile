@@ -61,6 +61,10 @@ curl --silent -o ngrok.zip -L "https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable
 unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
+echo -n "-----> Installing Ruby... "
+sudo apt-get install ruby
+echo "done"
+
 minecraft_version="1.19.2"
 minecraft_url="https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar"
 if [ -z "$minecraft_url" ]; then
