@@ -62,7 +62,7 @@ unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
 echo -n "-----> Installing Ruby... "
-sudo apt-get install ruby
+apt-get install ruby
 echo "done"
 
 minecraft_version="1.19.2"
