@@ -62,7 +62,7 @@ unzip ngrok.zip -d $BUILD_DIR/bin > /dev/null 2>&1
 echo "done"
 
 minecraft_version="1.19.2"
-minecraft_url="$(cat $ETC_DIR/files.json | python -c "import json,sys;obj=json.load(sys.stdin);print(obj[\"server\"][\"${minecraft_version}\"][\"url\"])")"
+minecraft_url="https://piston-data.mojang.com/v1/objects/f69c284232d7c7580bd89a5a4931c3581eae1378/server.jar"
 if [ -z "$minecraft_url" ]; then
   echo "Could not find URL for Minecraft version $minecraft_version. Please check files.json."
   exit 1
